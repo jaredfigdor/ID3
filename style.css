@@ -136,7 +136,6 @@ transform: translateY(-2px);
 }
 
 .inlineButton {
-    position: absolute;
-top: 260px;
-right: 60px;
+  display: inline;
+  vertical-align: middle;
 }
