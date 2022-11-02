@@ -5,8 +5,19 @@
         initial-scale=1.0">
         <link rel="stylesheet" href="https://use.typekit.net/djc1cjk.css">
         <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript"> 
+            $(function(){
+               setTimeout(function() {
+                  $('#splash').fadeOut(500);
+               }, 2000);
+            });
+            </script>
+            
     </head>
     <body>
+       <div class="container">
+        <div id="splash"><center><img class="gif" src="images/loading.gif" /></center></div>
         <div class="wrapper">
             <h1>Outfit Roulette</h1>
         </div>
@@ -25,7 +36,7 @@
                     <img class="dice" width="45" height="45" src="images/dice.png">
                 </span>
             </button>
-           
+        </div>
  
     </body>
 </html>

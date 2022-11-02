@@ -2,6 +2,10 @@ body {
     background-color: #A86DE0;
   }
 
+  img.gif {
+padding-top: 300px;
+  }
+
   .wrapper {
     font-family: omnium-tagline, sans-serif;
     font-weight: 300;
@@ -9,7 +13,24 @@ body {
     color: white;
     font-size: 14px;
     text-align: center;
+    vertical-align: middle;
+    margin: auto;
   }
+  #splash {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color:#9753D7;
+
+}
+
+.loadgif {
+  padding-top: 75%;
+  padding-left: 30%;
+}
+
 
   .border {
     margin-left: 20px;
