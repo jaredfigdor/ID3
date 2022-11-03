@@ -1,0 +1,50 @@
+.wrapper {
+    margin: 30px;
+}
+
+.button {
+    border-radius: 5px;
+    background-color: #CCCCCC;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: black;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+.opencam {
+    background-color: green;
+}
+
+.closecam {
+    background-color: red;
+    display:none;
+}
+
+.snap {
+    background-color: yellow;
+    display: none;
+}
+.wrap {
+    margin-top: 30px;
+}
+
+.machine {
+    margin-bottom: 30px;
+    height: 16px;
+    overflow: hidden;
+    background-color: #CCCCCC;
+    display: inline-block;
+}
+
+
+
+video, canvas {
+    width: 640px;
+    height: 480px;
+    background-color: #CCCCCC;
+}
