@@ -90,26 +90,48 @@ $( document ).ready(function() {
 	/**************************************
 	 * Shuffle code */
 
-	const btn = document.querySelector('#shuffle');
-
-	const el1 = document.querySelector('#machine1');
-	const el2 = document.querySelector('#machine2');
-	const el3 = document.querySelector('#machine3');
-
-	const machine1 = new SlotMachine(el1, { active: 0 });
-	const machine2 = new SlotMachine(el2, { active: 1 });
-	const machine3 = new SlotMachine(el3, { active: 2 });
-
-	function onComplete(active){
-		//results[this.element.id].innerText = `Index: ${this.active}`;
-	}
-
-
-	btn.addEventListener('click', () => {
-		machine1.shuffle(5, onComplete);
-		setTimeout(() => machine2.shuffle(5, onComplete), 500);
-		setTimeout(() => machine3.shuffle(5, onComplete), 1000);
-	});
+	 let count = 0;
+	 const shuffleButton = document.querySelector('#casinoShuffle');
+	 const stopButton = document.querySelector('#casinoStop');
+	 const casino1Element = document.querySelector('#casino1');
+	 const casino2Element = document.querySelector('#casino2');
+	 const casino3Element = document.querySelector('#casino3');
+	 const casino1 = new SlotMachine(casino1Element, {
+	   active: 0,
+	   delay: 500,
+	   direction: 'up'
+	 });
+	 const casino2 = new SlotMachine(casino2Element, {
+	   active: 1,
+	   delay: 500,
+	 });
+	 const casino3 = new SlotMachine(casino3Element, {
+	   active: 2,
+	   delay: 500,
+	   direction: 'up'
+	 });
+   
+	 shuffleButton.addEventListener('click', () => {
+	   count = 3;
+	   casino1.shuffle(Infinity);
+	   casino2.shuffle(Infinity);
+	   casino3.shuffle(Infinity);
+	 });
+   
+	 stopButton.addEventListener('click', () => {
+	   switch (count) {
+		 case 3:
+		   casino1.stop(2);
+		   break;
+		 case 2:
+		   casino2.stop(3);
+		   break;
+		 case 1:
+		   casino3.stop(4);
+		   break;
+	   }
+	   count--;
+	 });
 
 	/**************************************
 	 * END shuffle code */ 

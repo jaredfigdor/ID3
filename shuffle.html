@@ -10,29 +10,61 @@
 	</head>
 	<body>
 
-		<div class="wrapper">
-			
-			<h3>What type of vacatioin should I take?</h3>
-			<div id="machine1" class="machine">
-				<div>Madrid</div>
-				<div>London</div>
-				<div>New York</div>
+		<div id="randomize">
+			<div class="container">
+			  <h1>Randomize your stuff!</h1>
+	  
+			  <div class="row">
+				<div class="col-sm-4">
+				  <div class="randomize__item">
+					<div id="machine0" class="randomizeMachine">
+					  <div><img src="./img/slot1.png" /></div>
+					  <div><img src="./img/slot2.png" /></div>
+					  <div><img src="./img/slot3.png" /></div>
+					  <div><img src="./img/slot4.png" /></div>
+					  <div><img src="./img/slot5.png" /></div>
+					  <div><img src="./img/slot6.png" /></div>
+					</div>
+				  </div>
+				  <div id="machine0Result" class="col-xs-4 machineResult">Index: 0</div>
+				</div>
+	  
+				<div class="col-sm-4">
+				  <div class="randomize__item">
+					<div id="machine1" class="randomizeMachine">
+					  <div><img src="./img/slot1.png" /></div>
+					  <div><img src="./img/slot2.png" /></div>
+					  <div><img src="./img/slot3.png" /></div>
+					  <div><img src="./img/slot4.png" /></div>
+					  <div><img src="./img/slot5.png" /></div>
+					  <div><img src="./img/slot6.png" /></div>
+					</div>
+				  </div>
+				  <div id="machine1Result" class="col-xs-4 machineResult">Index: 1</div>
+				</div>
+	  
+				<div class="col-sm-4">
+				  <div class="randomize__item">
+					<div id="machine2" class="randomizeMachine">
+					  <div><img src="./img/slot1.png" /></div>
+					  <div><img src="./img/slot2.png" /></div>
+					  <div><img src="./img/slot3.png" /></div>
+					  <div><img src="./img/slot4.png" /></div>
+					  <div><img src="./img/slot5.png" /></div>
+					  <div><img src="./img/slot6.png" /></div>
+					</div>
+				  </div>
+				  <div id="machine2Result" class="col-xs-4 machineResult">Index: 2</div>
+				</div>
+			  </div>
+	  
+			  <div class="flex">
+				<div class="btn-group btn-group-justified" role="group">
+				  <button id="randomizeButton" type="button" class="btn btn-danger btn-lg">Shuffle</button>
+				</div>
+			  </div>
 			</div>
-
-			<div id="machine2" class="machine">
-				<div>Backpacking</div>
-				<div>Super lux vacation</div>
-				<div>Couch surf</div>
-			</div>
-
-			<div id="machine3" class="machine">
-				<div>$1,000</div>
-				<div>$500</div>
-				<div>$20</div>
-			</div>
-			
-
-		</div>
+		  </div>
 		<a href="#" class="button shuffle" id="shuffle">Shuffle</a>
 
 
