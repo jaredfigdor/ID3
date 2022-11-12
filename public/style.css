@@ -78,6 +78,7 @@ footer .content {
   height: 100vh;
   width: 100vw;
   text-align: center;
+  overflow:auto;
  }
 
 
@@ -476,10 +477,13 @@ li a {text-decoration : none; color : #2d2f31;}
   padding : 30px;
   border : #2d2f31 2px solid; 
   color : black;
+  border-radius: 5px;
   font-size : 1.4em;
   width: 90vw;
   height: 20px;
-  font-variant : small-caps;
+  font-family: omnium-tagline, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   cursor : pointer;
   display: block;
   text-align: left;
@@ -551,3 +555,99 @@ li a {text-decoration : none; color : #2d2f31;}
 #touchthree {position: absolute; opacity: 0; height: 0px;}    
 
 #touchthree:checked + .slidethree {height: 200px;} 
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.parent button {
+  background-color: #9753d7;
+  color: white;
+  border: none;
+  padding: 5px;
+  font-size: 31px;
+  height: 60px;
+  width: 60px;
+  box-shadow: 0 2px 4px darkslategray;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.parenttwo button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  font-size: 31px;
+  height: 60px;
+  width: 60px;
+  box-shadow: 0 2px 4px darkslategray;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.parent button:active {
+  background-color: #9753d7;
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
+}
+
+.parenttwo button.round5 {
+  background-color: red;
+  border: none;
+  padding: 5px;
+  font-size: 31px;
+  height: 60px;
+  width: 60px;
+  box-shadow: 0 2px 4px darkslategray;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.parentwo button.round5:active {
+  background-color: red;
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
+}
+
+.parent button:not(:first-child) {
+  margin-top: 10px;
+}
+
+.round-1 {
+  border-radius: 5%;
+}
+
+.round-2 {
+  border-radius: 10%;
+}
+
+.round-3 {
+  border-radius: 20%;
+}
+
+.round-4 {
+  border-radius: 30%;
+}
+
+.round-5 {
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  left: 40px;
+}
+
+.round-6 {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  border-radius: 70%;
+}
+
+#randomize > div.gameWindow > div > div > img {
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+  border-radius: 15px;
+  padding: 5px;
+}
