@@ -8,16 +8,6 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.container {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-h1 {
-  text-align: center;
-  padding-bottom: 25px;
-}
-
 .flex {
   display: flex;
   flex-direction: column;
@@ -28,29 +18,7 @@ h1 {
 /*
  * Header
  */
-.header-line {
-  width: 100%;
-  position: absolute;
-  height: 10px;
-  background-color: #a48e4e;
-  top: 0px;
-}
 
-header {
-  margin-top: 10px;
-  background-color: #dcd293;
-  border-bottom: 10px solid #66d4ff;
-  border-top: 20px dashed #a48e4e;
-  padding: 2em;
-  color: #333;
-  font-size: 25px;
-  text-align: center;
-}
-
-header a {
-  color: #6c5726;
-  font-weight: 700;
-}
 
 a:hover {
   text-decoration: underline;
@@ -105,10 +73,17 @@ footer .content {
 /*
  * SlotMachine
  */
+
+ html, body {
+  height: 100vh;
+  width: 100vw;
+ }
+
+
 #randomize {
-  border-bottom: 10px solid #a48e4e;
-  background-color: #eb6b56;
-  border-top: 20px dashed #b8312f;
+  background-color: #9753D7;
+  height: 100%;
+  width: 100%;
 }
 
 #randomize .randomize__item {
@@ -116,7 +91,7 @@ footer .content {
   width: 180px;
   height: 180px;
   background: white;
-  border-radius: 50%;
+  border-radius: 10%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -129,7 +104,7 @@ footer .content {
   width: 175px;
   height: 175px;
   background-color: #fff;
-  border-radius: 50%;
+  border-radius: 10%;
   margin: auto;
 }
 
@@ -304,15 +279,6 @@ footer .content {
 /*
  * Footer
  */
-footer {
-  width: 100%;
-  background-color: #6c5726;
-  border-top: 20px dashed #a48e4e;
-  height: 180px;
-  padding-top: 40px;
-  text-align: center;
-  color: #dcd293;
-}
 
 #textMachine {
   width: 520px;

@@ -1,23 +1,6 @@
 const timeout = (delay) => new Promise((res) => setTimeout(res, delay));
 
 window.addEventListener('DOMContentLoaded', () => {
-  // Example 1:
-  // Travel to...
-  const planeMachineElement = document.querySelector('#planeMachine');
-  const planeMachine = new SlotMachine(planeMachineElement, {
-    active: 1,
-    delay: 450,
-    randomize() {
-      return this.nextIndex;
-    },
-  });
-
-  (async function runPlaneMachine() {
-    await planeMachine.shuffle(5)
-    await timeout(1000);
-    runPlaneMachine();
-  })();
-
   // Example 2:
   // Randomize
   const randomizeButton = document.querySelector('#randomizeButton');
@@ -46,35 +29,6 @@ window.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => slotMachines[1].shuffle(5, onComplete), 500);
     setTimeout(() => slotMachines[2].shuffle(5, onComplete), 1000);
   });
-
-  // Example 3:
-  // Watch
-  const direction = 'down';
-  const watchSwitchButton = document.querySelector('#watchBtnSwitch');
-  const watchNextButton = document.querySelector('#watchBtnNext');
-  const watchPrevButton = document.querySelector('#watchBtnPrev');
-  const watchElement = document.querySelector('#watchContainer');
-  const watch = new SlotMachine(watchElement, {
-    direction,
-  });
-
-  watchSwitchButton.addEventListener('click', () => watch.setOptions({
-    direction: watch.options.direction === 'up' ? 'down' : 'up'
-  }));
-  watchPrevButton.addEventListener('click', () => watch.prev());
-  watchNextButton.addEventListener('click', () => watch.next());
-
-  // Example 4:
-  // Triky
-  const trikyButton = document.querySelector('#trikyShuffle');
-  const trikyElement = document.querySelector('#triky1');
-  const triky = new SlotMachine(trikyElement, {
-    randomize() {
-      return 0;
-    },
-  });
-
-  trikyButton.addEventListener('click', () => triky.shuffle(5));
 
   // Example 5:
   // Slot Machine
