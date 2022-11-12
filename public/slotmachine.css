@@ -22,8 +22,8 @@
 .slot-machine__container--gradient, .slot-machine__tile--gradient {
   -webkit-mask-image: -webkit-gradient(
     linear,
+    right top,
     left top,
-    left bottom,
     color-stop(0%, rgba(0, 0, 0, 0)),
     color-stop(25%, rgba(0, 0, 0, 1)),
     color-stop(75%, rgba(0, 0, 0, 1)),
@@ -31,3 +31,61 @@
   );
   mask: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http:// www.w3.org/2000/svg" width="0" height="0"><mask id="slotMachineFadeMask" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox"><linearGradient id="slotMachineFadeGradient" gradientUnits="objectBoundingBox" x="0" y="0"><stop stop-color="white" stop-opacity="0" offset="0"></stop><stop stop-color="white" stop-opacity="1" offset="0.25"></stop><stop stop-color="white" stop-opacity="1" offset="0.75"></stop><stop stop-color="white" stop-opacity="0" offset="1"></stop></linearGradient><rect x="0" y="-1" width="1" height="1" transform="rotate(90)" fill="url(#slotMachineFadeMask)"></rect></mask></svg>#slotMachineFadeMask');
 }
+
+.pushable {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  background: hsl(340deg 100% 32%);
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  }
+  .front {
+  display: block;
+  padding: 10px 10px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  background: hsl(345deg 100% 47%);
+  color: white;
+  transform: translateY(-6px);
+  }
+  
+  .pushable:active .front {
+  transform: translateY(-2px);
+  }
+  
+      .pushables {
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  background: hsl(266deg 62% 50%);
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  }
+  .back {
+  display: block;
+  padding: 10px 10px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  background: hsl(271deg 62% 58%);
+  color: white;
+  transform: translateY(-6px);
+  }
+  
+  .pushables:active .back {
+  transform: translateY(-2px);
+  }
+  
+  .dice {
+      padding-top: 4px;
+  }

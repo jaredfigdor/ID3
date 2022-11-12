@@ -77,26 +77,81 @@ footer .content {
  html, body {
   height: 100vh;
   width: 100vw;
+  text-align: center;
  }
 
 
 #randomize {
-  background-color: #9753D7;
+  background-color: #a86de0;
   height: 100%;
   width: 100%;
 }
 
+button.filter {
+  background-color: #9753d7;
+  height: 4%;
+  width: 20%;
+  color: white;
+  border: none;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+  margin-top: 20px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  position: absolute;
+  top: 60px;
+  left: 20px;
+}
+
+h1 {
+  font-family: omnium-tagline, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  font-size: 35px;
+  padding-top: 10px;
+}
+
+button.filter img {
+ color:white;
+ margin-right: 10px;
+ margin-bottom: 2px;
+}
+
+
+
 #randomize .randomize__item {
-  padding: 40px;
-  width: 180px;
-  height: 180px;
+  padding: 25px;
+  padding-left: 20px;
+  padding: auto;
+  width: 150px;
+  height: 150px;
   background: white;
   border-radius: 10%;
   margin-left: auto;
   margin-right: auto;
   display: block;
   text-align: center;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
+
+.gameWindow {
+  padding-top: 40px;
+  border:#9753d7 10px solid;
+  border-radius: 20px;
+  background-color: rgb(250, 250, 250);
+}
+
+#randomize .randomize__item #machine0 {
+margin: auto;
+}
+
+#randomize .randomize__item #machine1 {
+  margin: auto;
+  }
+
+  #randomize .randomize__item #machine2 {
+    margin: auto;
+    }
 
 #randomize .row > div.col-xs-4 > div {
   padding-top: 40px;
@@ -111,12 +166,24 @@ footer .content {
 .randomizeMachine {
   width: 100px;
   height: 100px;
+  transform: rotate(90deg);
+}
+
+.randomizeMachine div {
+  width: 100px;
+  height: 100px;
+  transform: rotate(-90deg);
 }
 
 #randomize .btn-group {
   margin-top: 30px;
   width: auto;
   margin-bottom: 15px;
+  
+}
+
+ul.slide {
+  height: 0px;
 }
 
 .machineResult {
@@ -127,6 +194,89 @@ footer .content {
   background: transparent !important;
   font-size: 18px;
   padding: 10px !important;
+}
+
+ul, li {
+  
+  list-style: none;  
+}  
+
+h2 {
+  font-size:2em;
+  margin: 0 0 0.5em;
+}
+
+.col-1-2 {
+  float: left; 
+  width: 100%;
+  margin: 20px 0 0;
+}
+
+ul.iossearchfacets li {
+  
+  font-weight: normal;  
+}
+
+ul.iossearchfacets li.has-selected {
+  
+  font-weight: bold;
+}
+
+ul.iossearchfacets ul {
+  
+  display: none;
+}
+
+ul.iossearchfacets .open > ul {
+  
+  display: block;
+}
+
+ul.iossearchfacets li.has-children .facetselector {
+
+  cursor: pointer;
+}
+
+ul.iossearchfacets li.has-children > .facetselector:after {
+  
+  content: "+";
+  margin: 0 0 0 5px;
+}
+
+ul.iossearchfacets li.has-children.open > .facetselector:after {
+  
+  content: "-";
+}
+
+.removeable-facet {
+  
+  margin: 0 10px 10px 0;
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #444444;
+  color: #FFFFFF;
+  border-radius: 10px;
+  display:inline-block;
+}
+
+.removeable-facet:after {
+  
+  padding: 0 0 0 5px;
+  content: "x"
+}
+
+.removeable-facet:hover {
+  
+  background-color: #666666;
+}
+
+
+@media screen and (min-width: 600px) {
+ 
+  .col-1-2 {
+    width: 50%;
+    padding: 0 20px 0 0;
+  }
 }
 
 /*
@@ -313,3 +463,91 @@ footer .content {
     animation: octocat-wave 560ms ease-in-out;
   }
 }
+
+body {background-color : #ededed; font-family : "Open Sans", sans-serif;}
+
+h1 {padding: 40px; text-align: center; font-size: 2em;}
+
+li a {text-decoration : none; color : #2d2f31;}
+
+
+.row label span {
+  margin-left: 25px;
+  padding : 30px;
+  border : #2d2f31 2px solid; 
+  color : black;
+  font-size : 1.4em;
+  width: 90vw;
+  height: 20px;
+  font-variant : small-caps;
+  cursor : pointer;
+  display: block;
+  text-align: left;
+}
+
+.row label span::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+}
+
+.slidetwo {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+}
+
+.slidethree {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+}
+
+#randomize > div.gameWindow > div  > label > span {
+  height: 10px;
+}
+
+.slide li {padding : 10px;
+
+  text-align: left;
+
+}
+
+.slidetwo li {padding : 10px;
+
+  text-align: left;
+
+}
+
+.slidethree li {padding : 10px;
+
+  text-align: left;
+
+}
+
+#touch {position: absolute; opacity: 0; height: 0px;}    
+
+#touch:checked + .slide {height: 200px;} 
+
+#touchtwo {position: absolute; opacity: 0; height: 0px;}    
+
+#touchtwo:checked + .slidetwo {height: 200px;} 
+
+#touchthree {position: absolute; opacity: 0; height: 0px;}    
+
+#touchthree:checked + .slidethree {height: 200px;} 
