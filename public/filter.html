@@ -50,10 +50,10 @@
                 <input type="checkbox" id="touch"> 
               
                 <ul class="slide">
-                  <li><a href="#">Lorem Ipsum</a></li> 
-                  <li><a href="#">Lorem Ipsum</a></li>
-                  <li><a href="#">Lorem Ipsum</a></li>
-                  <li><a href="#">Lorem Ipsum</a></li>
+                  <li><input type="checkbox">Formal</input></li> 
+                  <li><input type="checkbox">Black Tie</input></li>
+                  <li><input type="checkbox">Casual</input></li>
+                  <li><input type="checkbox">Business</input></li>
                 </ul>
               
            
@@ -63,10 +63,13 @@
                 <input type="checkbox" id="touchtwo"> 
               
                 <ul class="slidetwo">
-                  <li><a href="#">Lorem Ipsum</a></li> 
-                  <li><a href="#">Lorem Ipsum</a></li>
-                  <li><a href="#">Lorem Ipsum</a></li>
-                  <li><a href="#">Lorem Ipsum</a></li>
+                  <li><input type="checkbox">Rain</input></li> 
+                  <li><input type="checkbox">Snow</input></li>
+                  <li><input type="checkbox">Wind</input></li>
+                  <li><div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange" name="myRange" oninput="amount.value=myRange.value">
+                    <output name="amount" id="amount" for="myRange">0</output>
+                  </div></li>
                 </ul>
               
             
@@ -76,13 +79,16 @@
                 <input type="checkbox" id="touchthree"> 
               
                 <ul class="slidethree">
-                  <li><a href="#">Lorem Ipsum</a></li> 
-                  <li><a href="#">Lorem Ipsum</a></li>
-                  <li><a href="#">Lorem Ipsum</a></li>
-                  <li><a href="#">Lorem Ipsum</a></li>
+                  <li><input type="checkbox">Test</input></li> 
+                  <li><input type="checkbox">Test</input></li>
+                  <li><input type="checkbox">Test</input></li>
+                  <li><input type="checkbox">Test</input></li>
                 </ul>
               
-           
+                <ul>
+                <a href="index.html"><button class="filterButton">Save</button></a>
+                <button class="filterButton">Reset</button>
+           </ul>
         </div>
 
       </div>
