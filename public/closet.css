@@ -581,7 +581,7 @@ li a {text-decoration : none; color : #2d2f31;}
   left: 0px;
 }
 
-.parent button {
+.parentone button {
   position: fixed;
   background-color: #9753d7;
   color: white;
@@ -604,6 +604,20 @@ li a {text-decoration : none; color : #2d2f31;}
   font-size: 31px;
   height: 60px;
   width: 60px;
+  box-shadow: 0 2px 4px darkslategray;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+
+.parentthree button {
+  background-color: grey;
+  color: white;
+  border: white 2px solid;
+  padding: 5px;
+  font-size: 31px;
+  height: 50px;
+  width: 50px;
   box-shadow: 0 2px 4px darkslategray;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -634,7 +648,7 @@ li a {text-decoration : none; color : #2d2f31;}
   transform: translateY(2px);
 }
 
-.parent button:not(:first-child) {
+.parentone button:not(:first-child) {
   margin-top: 10px;
 }
 
@@ -664,6 +678,13 @@ li a {text-decoration : none; color : #2d2f31;}
 .round-6 {
   position: fixed;
   bottom: 20px;
+  right: 40px;
+  border-radius: 70%;
+}
+
+.round-7 {
+  position: fixed;
+  bottom: 130px;
   right: 40px;
   border-radius: 70%;
 }
@@ -728,9 +749,11 @@ body {
 }
 .tabs {
   position: relative;
-  margin: 1rem 0;
-  background: #1abc9c;
+  background: none;
   height: 14.75rem;
+  width: 96vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 .tabs::before,
 .tabs::after {
@@ -748,13 +771,16 @@ body {
 }
 .tab-label {
   position: relative;
+  width: 24vw;
+  z-index: +2;
   display: block;
   line-height: 2.75em;
   height: 3em;
-  padding: 0 1.618em;
-  background: #1abc9c;
-  border-right: 0.125rem solid #16a085;
-  color: #fff;
+  padding: 0 6vw;
+  background: none;
+  border: #9753d7 4px solid;
+  border-radius: 2px;
+  color: black;
   cursor: pointer;
   top: 0;
   transition: all 0.25s;
