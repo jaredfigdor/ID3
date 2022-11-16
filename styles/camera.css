@@ -1,9 +1,17 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  overflow: hidden;
+  overflow-y: hidden;
+ }
+
 .wrapper {
-    margin: 30px;
-    display: grid;
-    grid-template: 1fr / 1fr;
-    place-items: center;
+  height: 100%;
+  overflow: hidden;
 }
+
 
 .button {
     border-radius: 5px;
@@ -12,6 +20,16 @@
     font-weight: bold;
     padding: 10px 20px;
     color: black;
+}
+
+h1 {
+  font-family: omnium-tagline, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  font-size: 35px;
+  padding-top: 10px;
+  margin: 0;
 }
 
 .button:hover {
@@ -47,8 +65,8 @@
 
 
 video, canvas {
-    width: 640px;
-    height: 480px;
+    width: 80vw;
+    height: 30vh;
     background-color: #CCCCCC;
 }
 
@@ -83,3 +101,107 @@ video, canvas {
       color-stop(100%, rgba(0, 0, 0, 0));
     mask: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http:// www.w3.org/2000/svg" width="0" height="0"><mask id="slotMachineFadeMask" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox"><linearGradient id="slotMachineFadeGradient" gradientUnits="objectBoundingBox" x="0" y="0"><stop stop-color="white" stop-opacity="0" offset="0"></stop><stop stop-color="white" stop-opacity="1" offset="0.25"></stop><stop stop-color="white" stop-opacity="1" offset="0.75"></stop><stop stop-color="white" stop-opacity="0" offset="1"></stop></linearGradient><rect x="0" y="-1" width="1" height="1" transform="rotate(90)" fill="url(#slotMachineFadeMask)"></rect></mask></svg>#slotMachineFadeMask');
   }
+
+  #randomize {
+    background-color: #a86de0;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .gameWindow {
+    padding-top: 40px;
+    border:#9753d7 10px solid;
+    border-radius: 20px;
+    background-color: rgb(250, 250, 250);
+  }
+  
+  .parent {
+    position: absolute;
+    z-index: +2;
+  }
+  
+  .parent button {
+    position: fixed;
+    background-color: #9753d7;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 31px;
+    height: 60px;
+    width: 60px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .parenttwo button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 31px;
+    height: 60px;
+    width: 60px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .parent button:active {
+    background-color: #9753d7;
+    box-shadow: 0 0 2px darkslategray;
+    transform: translateY(2px);
+  }
+  
+  .parenttwo button.round5 {
+    background-color: red;
+    border: none;
+    padding: 5px;
+    font-size: 31px;
+    height: 60px;
+    width: 60px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .parentwo button.round5:active {
+    background-color: red;
+    box-shadow: 0 0 2px darkslategray;
+    transform: translateY(2px);
+  }
+  
+  .parent button:not(:first-child) {
+    margin-top: 10px;
+  }
+  
+  .round-1 {
+    border-radius: 5%;
+  }
+  
+  .round-2 {
+    border-radius: 10%;
+  }
+  
+  .round-3 {
+    border-radius: 20%;
+  }
+  
+  .round-4 {
+    border-radius: 30%;
+  }
+  
+  .round-5 {
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    left: 40px;
+  }
+  
+  .round-6 {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    border-radius: 70%;
+  }
+  

@@ -552,15 +552,15 @@ li a {text-decoration : none; color : #2d2f31;}
 
 #touch {position: absolute; opacity: 0; height: 0px;}    
 
-#touch:checked + .slide {height: 200px;} 
+#touch:checked + .slide {height: 220px;} 
 
 #touchtwo {position: absolute; opacity: 0; height: 0px;}    
 
-#touchtwo:checked + .slidetwo {height: 200px;} 
+#touchtwo:checked + .slidetwo {height: 220px;} 
 
 #touchthree {position: absolute; opacity: 0; height: 0px;}    
 
-#touchthree:checked + .slidethree {height: 200px;} 
+#touchthree:checked + .slidethree {height: 220px;} 
 
 .parent {
   position: absolute;
@@ -702,13 +702,6 @@ li a {text-decoration : none; color : #2d2f31;}
   border-radius: 10px;
 }
 
-}
-body {
-  font-family: "Open Sans";
-  background: #2c3e50;
-  color: #ecf0f1;
-  line-height: 1.618em;
-}
 .wrapper {
   max-width: 50rem;
   width: 100%;
@@ -781,7 +774,23 @@ body {
 }
 
 .slidecontainer {
-  width: 70%; /* Width of the outside container */
+  width: 80%; /* Width of the outside container */
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 40px;
+  text-align: center;
+}
+
+.slidecontainer output {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding-top: 5px;
+  background-color: #9753d7;
+  color: white;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
 }
 
 /* The slider itself */
@@ -818,3 +827,4 @@ body {
   background: #04AA6D; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
+
