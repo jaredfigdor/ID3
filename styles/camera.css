@@ -50,9 +50,7 @@ h1 {
     background-color: yellow;
     display: none;
 }
-.wrap {
-    margin-top: 30px;
-}
+
 
 .machine {
     margin-bottom: 30px;
@@ -67,7 +65,16 @@ h1 {
 video, canvas {
     width: 80vw;
     height: 30vh;
-    background-color: #CCCCCC;
+    border: 2px black solid;
+}
+
+video {
+  margin-top: 25px;
+}
+
+canvas {
+  margin-top: -31vh;
+  margin-bottom: 10vh;
 }
 
 .slot-machine__tile--no-transition {
@@ -109,7 +116,7 @@ video, canvas {
   }
 
   .gameWindow {
-    padding-top: 40px;
+    padding-top: 20px;
     border:#9753d7 10px solid;
     border-radius: 20px;
     background-color: rgb(250, 250, 250);

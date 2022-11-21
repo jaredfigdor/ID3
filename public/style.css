@@ -121,22 +121,21 @@ button.filter img {
 
 
 #randomize .randomize__item {
-  padding: 25px;
-  padding-left: 20px;
+  padding: 5px;
+  padding-top: 15px;
   padding: auto;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background: white;
   border-radius: 10%;
   margin-left: auto;
   margin-right: auto;
   display: block;
-  text-align: center;
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
 
 .gameWindow {
-  padding-top: 40px;
+  padding-top: 10px;
   border:#9753d7 10px solid;
   border-radius: 20px;
   background-color: rgb(250, 250, 250);
@@ -161,7 +160,7 @@ margin: auto;
     }
 
 #randomize .row > div.col-xs-4 > div {
-  padding-top: 40px;
+  padding-top: 10px;
   padding-left: 40px;
   width: 175px;
   height: 175px;
@@ -171,14 +170,14 @@ margin: auto;
 }
 
 .randomizeMachine {
-  width: 100px;
-  height: 100px;
+  width: 175px;
+  height: 175px;
   transform: rotate(90deg);
 }
 
 .randomizeMachine div {
-  width: 100px;
-  height: 100px;
+  width: 175px;
+  height: 175px;
   transform: rotate(-90deg);
 }
 
@@ -384,7 +383,7 @@ ul.iossearchfacets li.has-children.open > .facetselector:after {
 .slotMachine {
   width: 36.333333%;
   border: 5px solid #cf5178;
-  height: 100px;
+  height: 150px;
   display: inline-block;
 }
 
@@ -404,7 +403,8 @@ ul.iossearchfacets li.has-children.open > .facetselector:after {
 }
 
 .slotMachine .slot {
-  height: 100px;
+  height: 150px;
+  width: 150px;
   background-position-x: 55%;
   background-repeat: no-repeat;
 }

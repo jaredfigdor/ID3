@@ -55,7 +55,7 @@ $( document ).ready(function() {
 	function snap() {
 		canvas.width=video.clientWidth;
     	canvas.height=video.clientHeight;
-    	context.drawImage(video,0,0);
+    	context.drawImage(video,0,0,video.clientWidth,video.clientHeight);
 	}
 
 	//handle any errors
