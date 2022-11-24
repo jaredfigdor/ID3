@@ -7,6 +7,7 @@ $( document ).ready(function() {
 	//set up variables
 	var $opencam = $('.opencam');
 	var $closecam = $('.closecam');
+	var $buttons = $('.filterButton');
 	var $snap = $('.snap');
 	var $video = $('#video');
 	var $canvas = $('#canvas');
@@ -69,6 +70,8 @@ $( document ).ready(function() {
 		opencam();
 		$closecam.show();
 		$snap.show();
+		$opencam.hide();
+		$buttons.show();
 	});
 
 	$closecam.on('click', function(e) {
