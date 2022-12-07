@@ -20,6 +20,9 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
     integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
     crossorigin="anonymous"></script>
+    <script>
+
+    </script>
 </head>
 
 <body>
@@ -44,7 +47,7 @@
   <!-- randomize -->
   <div id="randomize">
     <h1>Outfit Roulette</h1>
-    <button class="filter"><img width="15" height="15" src="../images/filter.png">Filter</button>
+    <a href="filter.html"><button class="filter"><img width="15" height="15" src="../images/filter.png">Filter</button></a>
 
     <div class="closetWindow">
 
@@ -54,10 +57,11 @@
           <label for="tab-1" class="tab-label">Shirts</label>
           <div class="tab-content">
             <div class="row">
-              <div class="myGallery">
+              <div class="myGallery" id="shirtG">
                 <img width="120" height="120" src="../images/shirt1.jpg"/>
                 <img width="120" height="120" src="../images/shirt2.jpg"/>
                 <img width="120" height="120" src="../images/shirt3.jpg"/>
+                <img id="show1" width="120" height="120" src="../images/shirt3.jpg"/>
               </div>
 
             </div>
@@ -92,11 +96,7 @@
             </div>
           </div>
         </div>
-        <div class="tab">
-          <input type="radio" name="css-tabs" id="tab-4" class="tab-switch">
-          <label for="tab-4" class="tab-label">Tab</label>
-          <div class="tab-content">Coming Soon</div>
-        </div>
+
 
       </div>
 

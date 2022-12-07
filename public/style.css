@@ -205,7 +205,12 @@ ul.slide {
 ul, li {
   
   list-style: none;  
+  padding-inline-start: 0;
 }  
+
+#randomize > div.gameWindow > div > ul.slide > div:nth-child(2) {
+
+}
 
 h2 {
   font-size:2em;
@@ -532,6 +537,25 @@ li a {text-decoration : none; color : #2d2f31;}
   height: 10px;
 }
 
+#randomize > div.gameWindow > div > ul.slide {
+  text-align: center;
+}
+
+#randomize > div.gameWindow > div > ul.slide > div:nth-child(1) > li:nth-child(1) {
+  padding-right: 10%;
+}
+
+#randomize > div.gameWindow > div > ul.slide > div:nth-child(1) {
+  justify-content: center;
+}
+
+#randomize > div.gameWindow > div > ul.slide > div:nth-child(2) {
+  justify-content: center;
+}
+
+#randomize > div.gameWindow > div > ul:nth-child(7) {
+  padding-left: 8%;
+}
 .slide li {padding : 10px;
 
   text-align: left;
@@ -552,7 +576,7 @@ li a {text-decoration : none; color : #2d2f31;}
 
 #touch {position: absolute; opacity: 0; height: 0px;}    
 
-#touch:checked + .slide {height: 220px;} 
+#touch:checked + .slide {height: 120px;} 
 
 #touchtwo {position: absolute; opacity: 0; height: 0px;}    
 
@@ -827,4 +851,18 @@ li a {text-decoration : none; color : #2d2f31;}
   background: #04AA6D; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
+
+#filt {
+  height: 40px;
+  width: 100px;
+  background-color: none;
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+
+
+
+
+
 

@@ -610,6 +610,10 @@ li a {text-decoration : none; color : #2d2f31;}
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
 
+#show1 {
+  display: none;
+}
+
 .parentthree button {
   background-color: grey;
   color: white;
@@ -773,7 +777,7 @@ body {
 }
 .tab-label {
   position: relative;
-  width: 22vw;
+  width: 29vw;
   z-index: +2;
   display: block;
   line-height: 2.75em;
