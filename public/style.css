@@ -608,7 +608,7 @@ li a {text-decoration : none; color : #2d2f31;}
 }
 
 .parenttwo button {
-  background-color: red;
+  background-color: #9753d7;
   color: white;
   border: white 2px solid;
   padding: 5px;
@@ -929,6 +929,36 @@ html, body {
  .cameraButtons {
   padding-top: 20px;
 }
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+.start-btn{
+  text-align: center;
+display: inline-block;
+margin:5px;
+  font-weight: bold;
+  padding: 10px 0 10px 10px ;
+  padding-right: 8px;
+  background-color: red;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.2rem;
+  text-shadow: -1px -1px black, 1px 1px white;
+  color: white;
+  -webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+-o-border-radius: 7px;
+border-radius: 7px;
+  box-shadow: 0 .2em gray; 
+  cursor: pointer;
+
+}
+.video-game-button:active, .start-btn:active {
+box-shadow: none;
+position: relative;
+top: .2em;
+}
+
+
 
 
 

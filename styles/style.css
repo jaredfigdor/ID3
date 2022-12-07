@@ -164,7 +164,7 @@ transform: translateY(-2px);
 .parent button {
   background-color: #9753d7;
   color: white;
-  border: none;
+  border: 2px white solid;
   padding: 5px;
   font-size: 31px;
   height: 60px;
@@ -175,7 +175,7 @@ transform: translateY(-2px);
 }
 
 .parenttwo button {
-  background-color: red;
+  background-color: #9753d7;
   color: white;
   border: 2px white solid;
   padding: 5px;
@@ -193,17 +193,6 @@ transform: translateY(-2px);
   transform: translateY(2px);
 }
 
-.parenttwo button.round5 {
-  background-color: red;
-  border: 2px white solid;
-  padding: 5px;
-  font-size: 31px;
-  height: 60px;
-  width: 60px;
-  box-shadow: 0 2px 4px darkslategray;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
 
 .parentwo button.round5:active {
   background-color: red;
