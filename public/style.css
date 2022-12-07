@@ -537,6 +537,8 @@ li a {text-decoration : none; color : #2d2f31;}
   height: 10px;
 }
 
+
+
 #randomize > div.gameWindow > div > ul.slide {
   text-align: center;
 }
@@ -580,7 +582,7 @@ li a {text-decoration : none; color : #2d2f31;}
 
 #touchtwo {position: absolute; opacity: 0; height: 0px;}    
 
-#touchtwo:checked + .slidetwo {height: 220px;} 
+#touchtwo:checked + .slidetwo {height: 180px;} 
 
 #touchthree {position: absolute; opacity: 0; height: 0px;}    
 
@@ -801,7 +803,6 @@ li a {text-decoration : none; color : #2d2f31;}
   width: 80%; /* Width of the outside container */
   margin-left: auto;
   margin-right: auto;
-  padding-right: 40px;
   text-align: center;
 }
 
@@ -853,16 +854,81 @@ li a {text-decoration : none; color : #2d2f31;}
 }
 
 #filt {
-  height: 40px;
-  width: 100px;
-  background-color: none;
-  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-  transition: opacity .2s;
+  height: 35px;
+  width: 90px;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-transition: .4s; /* 0.2 seconds transition on hover */
+  transition: opacity .4s;
+}
+
+#filt.active {
+  background-color: black;
+}
+
+input[type="checkbox"]:not(:checked), 
+input[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999%;
+}
+
+input[type="checkbox"] + label {
+  display: inline-block;
+  padding: 8px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  margin-bottom: 5px;
+}
+
+input[type="checkbox"]:checked + label {
+  border: 1px solid white;
+  color: white;
+  background-color: black;
 }
 
 
+#randomize > div.gameWindow > div > ul.slide > ul > div:nth-child(1) {
+  justify-content: center;
+}
 
+#randomize > div.gameWindow > div > ul.slide > ul > div:nth-child(2) {
+  justify-content: center;
+}
 
+#randomize > div.gameWindow > div > ul.slidetwo > ul > div:nth-child(1) {
+  justify-content: center;
+}
+
+#randomize > div.gameWindow > div > ul.slidetwo > ul > div:nth-child(2) {
+  justify-content: center;
+}
+
+#randomize > div.gameWindow > div > ul.slide > ul > div {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  overflow: auto;
+ }
+
+ #randomize {
+  height: 100%;
+ }
+
+ #randomizeButton {
+  margin-top: 15px;
+ }
+
+ .cameraButtons {
+  padding-top: 20px;
+}
 
 
 

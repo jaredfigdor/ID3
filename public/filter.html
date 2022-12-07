@@ -67,14 +67,26 @@ function colorize() {
                 <input type="checkbox" id="touch"> 
               
                 <ul class="slide">
-                  <div class="row">
-                  <li><button id="filt" onclick="colorize()">Formal</button></li> 
-                  <li><input type="checkbox">Black Tie</input></li>
-                </div>
-                <div class="row">
-                  <li><input type="checkbox">Casual</input></li>
-                  <li><input type="checkbox">Business</input></li>
-                </div>
+                  <ul>
+                    <div class="row">
+                    <li>
+                      <input type="checkbox" id="check_1" name="check_1" value="check_1">
+                      <label for="check_1">Casual</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="check_2" name="check_2" value="check_2">
+                      <label for="check_2">Formal</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="check_3" name="check_3" value="check_3">
+                      <label for="check_3">Night Out</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="check_4" name="check_4" value="check_4">
+                      <label for="check_4">Black Tie</label>
+                    </li>
+                  </div>
+                  </ul>
                 
                 </ul>
               
@@ -85,9 +97,22 @@ function colorize() {
                 <input type="checkbox" id="touchtwo"> 
               
                 <ul class="slidetwo">
-                  <li><input type="checkbox">Rain</input></li> 
-                  <li><input type="checkbox">Snow</input></li>
-                  <li><input type="checkbox">Wind</input></li>
+                  <ul>
+                    <div class="row">
+                    <li>
+                      <input type="checkbox" id="check_5" name="check_5" value="check_5">
+                      <label for="check_5">Rain</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="check_6" name="check_6" value="check_6">
+                      <label for="check_6">Snow</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="check_7" name="check_7" value="check_7">
+                      <label for="check_7">Wind</label>
+                    </li>
+                  </div>
+                  </ul>
                   <li><div class="slidecontainer">
                     <input type="range" min="1" max="100" value="50" class="slider" id="myRange" name="myRange" oninput="amount.value=myRange.value">
                     <output name="amount" id="amount" for="myRange">0</output>

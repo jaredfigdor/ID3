@@ -102,9 +102,9 @@ a.button.snap {
 
 
 video, canvas {
-    width: 80vw;
-    height: 30vh;
-    border: 2px black solid;
+    width: 94vw;
+    height: 40vh;
+    border: none;
 }
 
 video {
@@ -112,8 +112,8 @@ video {
 }
 
 canvas {
-  margin-top: -31vh;
-  margin-bottom: 10vh;
+  margin-top: -45vh;
+  margin-bottom: 2vh;
 }
 
 .slot-machine__tile--no-transition {
@@ -155,7 +155,6 @@ canvas {
   }
 
   .gameWindow {
-    padding-top: 20px;
     border:#9753d7 10px solid;
     border-radius: 20px;
     background-color: rgb(250, 250, 250);
@@ -285,5 +284,13 @@ canvas {
     padding: 0;
   }
 
+  h1 {
+    font-family: omnium-tagline, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    font-size: 2em;
+    padding: 40px;
+  }
 
   

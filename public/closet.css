@@ -790,6 +790,7 @@ body {
   cursor: pointer;
   top: 0;
   transition: all 0.25s;
+  padding-top: 3px;
 }
 .tab-label:hover {
   top: -0.25rem;
@@ -803,9 +804,9 @@ body {
   z-index: 1;
   top: 2.75em;
   left: 0;
-  padding: 1rem;
+  padding-top:0.5rem;
   background: rgb(250, 250, 250);
-  overflow: auto;
+  overflow: hidden;
   color: #2c3e50;
   opacity: 0;
   transition: all 0.35s;
@@ -826,5 +827,13 @@ body {
 }
 
 #randomize > div.closetWindow > div > div:nth-child(1) > div > div > div > img {
+  padding: 5px;
+}
+
+#randomize > div.closetWindow > div > div:nth-child(2) > div > div > div > img {
+  padding: 5px;
+}
+
+#randomize > div.closetWindow > div > div:nth-child(3) > div > div > div > img {
   padding: 5px;
 }
