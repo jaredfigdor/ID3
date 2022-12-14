@@ -93,7 +93,7 @@ button.filter {
   height: 4%;
   width: 20%;
   color: white;
-  border: none;
+  border: white 1px solid;
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
   margin-top: 20px;
   margin-bottom: 5px;
@@ -604,7 +604,7 @@ li a {text-decoration : none; color : #2d2f31;}
   font-size: 31px;
   height: 60px;
   width: 60px;
-  box-shadow: 0 2px 4px darkslategray;
+  box-shadow: 0 0px 10px #ce6441;
   cursor: pointer;
   transition: all 0.2s ease;
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
@@ -733,7 +733,7 @@ li a {text-decoration : none; color : #2d2f31;}
 .filterButton {
   height: 30px;
   width: 80px;
-  border: none;
+  border: solid white 2px;
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
   color: white;
   background-color: #9753d7;

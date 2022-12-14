@@ -16,6 +16,33 @@ padding-top: 300px;
     vertical-align: middle;
     margin: auto;
   }
+
+  h1 {
+    font-family: omnium-tagline, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    font-size: 35px;
+    padding-top: 10px;
+  }
+
+  .go {
+    background-color: #9753D7;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-family: omnium-tagline, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 26px;
+    border-radius: 20px;
+    cursor:pointer;
+    box-shadow: black 2px 5px 4px;
+  }
+
+  
+
+  
   #splash {
     position:absolute;
     top:0;
@@ -63,6 +90,7 @@ padding-top: 300px;
     padding-top: 40px;
     padding-left: 5px;
     padding-right: 5px;
+    padding-bottom: 50px;
   }
 
   .closet {

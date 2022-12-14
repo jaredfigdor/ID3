@@ -602,7 +602,7 @@ li a {text-decoration : none; color : #2d2f31;}
   font-size: 31px;
   height: 60px;
   width: 60px;
-  box-shadow: 0 2px 4px darkslategray;
+  box-shadow: 0 0px 10px #ce6441;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -615,7 +615,6 @@ li a {text-decoration : none; color : #2d2f31;}
   font-size: 31px;
   height: 60px;
   width: 60px;
-  box-shadow: 0 2px 4px darkslategray;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -874,7 +873,7 @@ input[type="checkbox"]:checked {
 
 input[type="checkbox"] + label {
   display: inline-block;
-  padding: 8px;
+  padding: 4px;
   cursor: pointer;
   border: 1px solid black;
   border-radius: 5px;
@@ -915,7 +914,7 @@ html, body {
   height: 100vh;
   width: 100vw;
   text-align: center;
-  overflow: auto;
+  overflow: hidden;
  }
 
  #randomize {
