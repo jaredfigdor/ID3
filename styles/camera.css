@@ -190,9 +190,10 @@ canvas {
     font-size: 31px;
     height: 60px;
     width: 60px;
-    box-shadow: 0 2px 4px darkslategray;
+    box-shadow: 0 4px 8px darkslategray;
     cursor: pointer;
     transition: all 0.2s ease;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
   }
   
   .cameraButtons {

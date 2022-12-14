@@ -93,7 +93,7 @@ button.filter {
   height: 4%;
   width: 20%;
   color: white;
-  border: none;
+  border: white 1px solid;
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
   margin-top: 20px;
   margin-bottom: 5px;
@@ -102,6 +102,8 @@ button.filter {
   top: 60px;
   left: 20px;
 }
+
+
 
 h1 {
   font-family: omnium-tagline, sans-serif;
@@ -116,6 +118,19 @@ button.filter img {
  color:white;
  margin-right: 10px;
  margin-bottom: 2px;
+}
+
+#randomize > div.row > ul > ul > div > li:nth-child(1) {
+  padding-right: 10px;
+  padding-left: 50px;
+}
+
+#randomize > div.row > ul > ul > div > li:nth-child(2) {
+  padding-right: 10px;
+}
+
+#padding_6 {
+  padding-right: 10px;
 }
 
 
@@ -602,9 +617,10 @@ li a {text-decoration : none; color : #2d2f31;}
   font-size: 31px;
   height: 60px;
   width: 60px;
-  box-shadow: 0 0px 10px #ce6441;
+  box-shadow: 0 4px 8px darkslategray;
   cursor: pointer;
   transition: all 0.2s ease;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
 
 .parenttwo button {
@@ -615,8 +631,10 @@ li a {text-decoration : none; color : #2d2f31;}
   font-size: 31px;
   height: 60px;
   width: 60px;
+  box-shadow: 0 4px 8px darkslategray;
   cursor: pointer;
   transition: all 0.2s ease;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
 
 .parent button:active {
@@ -638,7 +656,7 @@ li a {text-decoration : none; color : #2d2f31;}
 }
 
 .parentwo button.round5:active {
-  background-color: red;
+  background-color: black;
   box-shadow: 0 0 2px darkslategray;
   transform: translateY(2px);
 }
@@ -668,6 +686,10 @@ li a {text-decoration : none; color : #2d2f31;}
   position: fixed;
   bottom: 20px;
   left: 40px;
+}
+
+#randomize > div.gameWindow > div > div:nth-child(3) {
+  padding-bottom: 15px;
 }
 
 .round-6 {

@@ -78,13 +78,13 @@ footer .content {
   height: 100vh;
   width: 100vw;
   text-align: center;
-  overflow: auto;
+  overflow: hidden;
  }
 
 
 #randomize {
   background-color: #a86de0;
-  height: 100%;
+  height: 100vh;
   width: 100%;
 }
 
@@ -103,6 +103,8 @@ button.filter {
   left: 20px;
 }
 
+
+
 h1 {
   font-family: omnium-tagline, sans-serif;
   font-weight: 500;
@@ -118,46 +120,46 @@ button.filter img {
  margin-bottom: 2px;
 }
 
+#randomize > div.row > ul > ul > div > li:nth-child(1) {
+  padding-right: 10px;
+  padding-left: 50px;
+}
+
+#randomize > div.row > ul > ul > div > li:nth-child(2) {
+  padding-right: 10px;
+}
+
+#padding_6 {
+  padding-right: 10px;
+}
+
 
 
 #randomize .randomize__item {
-  padding: 25px;
-  padding-left: 20px;
+  padding: 5px;
+  padding-top: 15px;
   padding: auto;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background: white;
   border-radius: 10%;
   margin-left: auto;
   margin-right: auto;
   display: block;
-  text-align: center;
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
 
 .gameWindow {
-  padding-top: 40px;
+  padding-top: 10px;
   border:#9753d7 10px solid;
   border-radius: 20px;
   background-color: rgb(250, 250, 250);
 }
 
 .closetWindow {
-  height: 75vh;
   border:#9753d7 10px solid;
   border-radius: 20px;
   background-color: rgb(250, 250, 250);
-}
-
-.addClothes {
-  position: relative;
-  height: 50px;
-  width: 50px;
-  top: 33vh;
-  left: 35vw;
-  z-index: +2;
-  border-radius: 70%;
-  font-size: 30px;
 }
 
 #randomize .randomize__item #machine0 {
@@ -173,7 +175,7 @@ margin: auto;
     }
 
 #randomize .row > div.col-xs-4 > div {
-  padding-top: 40px;
+  padding-top: 10px;
   padding-left: 40px;
   width: 175px;
   height: 175px;
@@ -183,14 +185,14 @@ margin: auto;
 }
 
 .randomizeMachine {
-  width: 100px;
-  height: 100px;
+  width: 175px;
+  height: 175px;
   transform: rotate(90deg);
 }
 
 .randomizeMachine div {
-  width: 100px;
-  height: 100px;
+  width: 175px;
+  height: 175px;
   transform: rotate(-90deg);
 }
 
@@ -218,7 +220,12 @@ ul.slide {
 ul, li {
   
   list-style: none;  
+  padding-inline-start: 0;
 }  
+
+#randomize > div.gameWindow > div > ul.slide > div:nth-child(2) {
+
+}
 
 h2 {
   font-size:2em;
@@ -396,7 +403,7 @@ ul.iossearchfacets li.has-children.open > .facetselector:after {
 .slotMachine {
   width: 36.333333%;
   border: 5px solid #cf5178;
-  height: 100px;
+  height: 150px;
   display: inline-block;
 }
 
@@ -416,7 +423,8 @@ ul.iossearchfacets li.has-children.open > .facetselector:after {
 }
 
 .slotMachine .slot {
-  height: 100px;
+  height: 150px;
+  width: 150px;
   background-position-x: 55%;
   background-repeat: no-repeat;
 }
@@ -544,6 +552,27 @@ li a {text-decoration : none; color : #2d2f31;}
   height: 10px;
 }
 
+
+
+#randomize > div.gameWindow > div > ul.slide {
+  text-align: center;
+}
+
+#randomize > div.gameWindow > div > ul.slide > div:nth-child(1) > li:nth-child(1) {
+  padding-right: 10%;
+}
+
+#randomize > div.gameWindow > div > ul.slide > div:nth-child(1) {
+  justify-content: center;
+}
+
+#randomize > div.gameWindow > div > ul.slide > div:nth-child(2) {
+  justify-content: center;
+}
+
+#randomize > div.gameWindow > div > ul:nth-child(7) {
+  padding-left: 8%;
+}
 .slide li {padding : 10px;
 
   text-align: left;
@@ -564,28 +593,26 @@ li a {text-decoration : none; color : #2d2f31;}
 
 #touch {position: absolute; opacity: 0; height: 0px;}    
 
-#touch:checked + .slide {height: 200px;} 
+#touch:checked + .slide {height: 120px;} 
 
 #touchtwo {position: absolute; opacity: 0; height: 0px;}    
 
-#touchtwo:checked + .slidetwo {height: 200px;} 
+#touchtwo:checked + .slidetwo {height: 180px;} 
 
 #touchthree {position: absolute; opacity: 0; height: 0px;}    
 
-#touchthree:checked + .slidethree {height: 200px;} 
+#touchthree:checked + .slidethree {height: 220px;} 
 
 .parent {
   position: absolute;
   z-index: +2;
-  bottom: 0px;
-  left: 0px;
 }
 
-.parentone button {
+.parent button {
   position: fixed;
   background-color: #9753d7;
+  border: white 2px solid;
   color: white;
-  border: 2px white solid;
   padding: 5px;
   font-size: 31px;
   height: 60px;
@@ -610,24 +637,6 @@ li a {text-decoration : none; color : #2d2f31;}
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
 
-#show1 {
-  display: none;
-}
-
-.parentthree button {
-  background-color: #5f5f5f;
-  color: white;
-  border: white 2px solid;
-  padding: 5px;
-  font-size: 31px;
-  height: 50px;
-  width: 50px;
-  box-shadow: 0 2px 4px darkslategray;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
-}
-
 .parent button:active {
   background-color: #9753d7;
   box-shadow: 0 0 2px darkslategray;
@@ -647,12 +656,12 @@ li a {text-decoration : none; color : #2d2f31;}
 }
 
 .parentwo button.round5:active {
-  background-color: red;
+  background-color: black;
   box-shadow: 0 0 2px darkslategray;
   transform: translateY(2px);
 }
 
-.parentone button:not(:first-child) {
+.parent button:not(:first-child) {
   margin-top: 10px;
 }
 
@@ -686,13 +695,6 @@ li a {text-decoration : none; color : #2d2f31;}
   border-radius: 70%;
 }
 
-.round-7 {
-  position: fixed;
-  bottom: 130px;
-  right: 45px;
-  border-radius: 70%;
-}
-
 #randomize > div.gameWindow > div > div > img {
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
   border-radius: 15px;
@@ -702,7 +704,6 @@ li a {text-decoration : none; color : #2d2f31;}
 .myGallery .item {
   position: relative;
 }
-
 
 .myGallery .item img {
   vertical-align: middle;
@@ -717,6 +718,7 @@ li a {text-decoration : none; color : #2d2f31;}
   left: 0;
   width: 100%;
   max-height: 100%;
+  overflow: auto;
   box-sizing: border-box;
   transition: transform .5s;
   transform: translateY(100%);
@@ -728,24 +730,21 @@ li a {text-decoration : none; color : #2d2f31;}
   transform: translateY(0%);
 }
 
+.myGallery {
+  height: 100vh;
+}
 
 
 .filterButton {
   height: 30px;
   width: 80px;
-  border: solid white 2px;
+  border: none;
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
   color: white;
   background-color: #9753d7;
   border-radius: 10px;
 }
 
-body {
-  font-family: "Open Sans";
-  background: #2c3e50;
-  color: #ecf0f1;
-  line-height: 1.618em;
-}
 .wrapper {
   max-width: 50rem;
   width: 100%;
@@ -753,12 +752,9 @@ body {
 }
 .tabs {
   position: relative;
-  background: none;
+  margin: 1rem 0;
+  background: #1abc9c;
   height: 14.75rem;
-  width: 96vw;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
 }
 .tabs::before,
 .tabs::after {
@@ -770,46 +766,40 @@ body {
 }
 .tab {
   float: left;
-  z-index: -1;
 }
 .tab-switch {
   display: none;
 }
 .tab-label {
   position: relative;
-  width: 29vw;
-  z-index: +2;
   display: block;
   line-height: 2.75em;
   height: 3em;
-  padding: 0 6vw;
-  background: none;
-  border: #9753d7 1px solid;
-  border-radius: 2px;
-  color: black;
+  padding: 0 1.618em;
+  background: #1abc9c;
+  border-right: 0.125rem solid #16a085;
+  color: #fff;
   cursor: pointer;
   top: 0;
   transition: all 0.25s;
-  padding-top: 3px;
 }
 .tab-label:hover {
   top: -0.25rem;
   transition: top 0.25s;
 }
 .tab-content {
-  height: 60vh;
-  width: 90vw;
+  height: 100vh;
   position: absolute;
-  margin-left: 10px;
   z-index: 1;
   top: 2.75em;
   left: 0;
-  padding-top:0.5rem;
-  background: rgb(250, 250, 250);
-  overflow: hidden;
+  padding: 1.618rem;
+  background: #fff;
   color: #2c3e50;
+  border-bottom: 0.25rem solid #bdc3c7;
   opacity: 0;
   transition: all 0.35s;
+  padding-bottom: 40px;
 }
 .tab-switch:checked + .tab-label {
   background: #fff;
@@ -826,14 +816,166 @@ body {
   transition: all 0.35s;
 }
 
-#randomize > div.closetWindow > div > div:nth-child(1) > div > div > div > img {
-  padding: 5px;
+.slidecontainer {
+  width: 80%; /* Width of the outside container */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-#randomize > div.closetWindow > div > div:nth-child(2) > div > div > div > img {
-  padding: 5px;
+.slidecontainer output {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding-top: 5px;
+  background-color: #9753d7;
+  color: white;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
 }
 
-#randomize > div.closetWindow > div > div:nth-child(3) > div > div > div > img {
-  padding: 5px;
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
 }
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+#filt {
+  height: 35px;
+  width: 90px;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-transition: .4s; /* 0.2 seconds transition on hover */
+  transition: opacity .4s;
+}
+
+#filt.active {
+  background-color: black;
+}
+
+input[type="checkbox"]:not(:checked), 
+input[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999%;
+}
+
+input[type="checkbox"] + label {
+  display: inline-block;
+  padding: 4px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  margin-bottom: 5px;
+}
+
+input[type="checkbox"]:checked + label {
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+}
+
+
+#randomize > div.gameWindow > div > ul.slide > ul > div:nth-child(1) {
+  justify-content: center;
+}
+
+#randomize > div.gameWindow > div > ul.slide > ul > div:nth-child(2) {
+  justify-content: center;
+}
+
+#randomize > div.gameWindow > div > ul.slidetwo > ul > div:nth-child(1) {
+  justify-content: center;
+}
+
+#randomize > div.gameWindow > div > ul.slidetwo > ul > div:nth-child(2) {
+  justify-content: center;
+}
+
+#randomize > div.gameWindow > div > ul.slide > ul > div {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  overflow: hidden;
+ }
+
+ #randomize {
+  height: 100%;
+ }
+
+ #randomizeButton {
+  margin-top: 15px;
+ }
+
+ .cameraButtons {
+  padding-top: 20px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+.start-btn{
+  text-align: center;
+display: inline-block;
+margin:5px;
+  font-weight: bold;
+  padding: 10px 0 10px 10px ;
+  padding-right: 8px;
+  background-color: red;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.2rem;
+  text-shadow: -1px -1px black, 1px 1px white;
+  color: white;
+  -webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+-o-border-radius: 7px;
+border-radius: 7px;
+  box-shadow: 0 .2em gray; 
+  cursor: pointer;
+
+}
+.video-game-button:active, .start-btn:active {
+box-shadow: none;
+position: relative;
+top: .2em;
+}
+
+
+
+
+
